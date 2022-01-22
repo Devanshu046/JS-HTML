@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with JS</title>
+</head>
+<body>
+    <h1 id="id1">
+       <i>Hello all</i> 
+    </h1>
+    <h2 id="id2">
+        my name is dev
+    </h2>
+
+    <button onclick="clickbutton1()">submit1</button>
+    <input type="button" value="submit2" onclick="clickbutton2()">
+
+   <div id="f2">
+    Enter your surname:<input type="text" value="parmar"id="div2">
+   </div>
+   <div id="f1">
+    Enter your name: <input type="text" id="div1">
+   </div> 
+
+    <script>
+        console.log('hello');
+        function clickbutton1(){
+            console.log(document.title);
+            document.title = "hello JS";
+            let c=document.getElementById('id2');
+            c.style.color="blue";
+            let d=document.getElementById('div2');
+            console.log(d.value);
+        }
+        
+        function clickbutton2(){
+            let a = document.getElementById('id1');
+            a.style.color = "red";
+            console.log(a.innerHTML);
+            console.log(a.innerText);
+         //   a.innerText = "hello <strong>JS</strong>";
+          a.innerHTML = "hello <strong>JS</strong>";
+            let b = document.getElementById('div1');
+            console.log(b.value);
+          //  console.log(a.innerText);
+        }   
+    </script>
+</body>
+</html>
