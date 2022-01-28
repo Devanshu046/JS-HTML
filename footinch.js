@@ -10,7 +10,8 @@ e.addEventListener('click',clearall);
 function footinch(){
 
     c.value=a.value%12;
-    b.value=(a.value)/12-(c.value/12);
+    //b.value=(a.value)/12-(c.value/12);
+    b.value=parseInt(a.value/12);
 }
 function clearall(){
     document.getElementById('t1').value='';
