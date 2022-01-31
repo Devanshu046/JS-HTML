@@ -3,7 +3,13 @@ a.addEventListener('click',democonfirm);
 function democonfirm(){
    
    // confirm('thanks');
-    if (window.confirm("Do you really want to leave?")) {
-        alert( "Thanks for Visiting!");
-      }
+   result=confirm("Do you really want to leave?")
+   if(result==null)
+   {
+     console.log('cancle selected');
+   }
+   else{
+     console.log(result);
+     console.log('ok selected');
+   }
 }
