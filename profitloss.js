@@ -7,14 +7,15 @@ let f=document.getElementById('t5');
 
 a.addEventListener('click',profitloss);
 function profitloss(){
-    if(c.value>b.value)//sales>cost
+    if((+c.value)>(+b.value))//sales>cost
     {
     d.value='profit';
+    e.value=(+c.value)-(+b.value);
     }
-    if(b.value>c.value)//cost>sales
+    else//cost>sales
     {
      d.value='loss';
+     e.value=(+b.value)-(+c.value);
     }
-    e.value=(+c.value)-(+b.value);
-    f.value=(((+c.value)-(+b.value))*100/(+c.value)).toFixed(2);
+    f.value=e.value*100/(+b.value);
 }
