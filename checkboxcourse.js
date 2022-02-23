@@ -5,6 +5,7 @@ let t=document.getElementById('t1');
 let bt=document.getElementById('b1');
 bt.addEventListener('click',course);
 function course(){
+    t.value="";
     if(a.checked)
     {
         t.value=a.value;
