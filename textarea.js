@@ -14,12 +14,13 @@ function sumtext(){
     let i=1;
     let j=0;
     let n=a.value;
-    a.value="";
+    b.value="";
     for(i=1;i<=n;i++)
     {
      j+=i; 
      b.value+=i+"\n"; 
     }
     b.value+= j +"\n";
+    
 
 }
