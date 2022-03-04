@@ -14,5 +14,6 @@ function selecttext(){
     t1.value=s1.value;
 }
 function changeimg(){
-    download.jpg.setAttribute('src',"d1.jpg");
+    //d1.setAttribute('src',"myWallpaper6.jpg");
+    d1.jpg=myWallpaper6.jpg;
 }
