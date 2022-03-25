@@ -12,7 +12,6 @@ let i=0;
 
 function changeimg(){
     i4.setAttribute('src',a[i]);
-    //console.log(hello);
     i++;
     if(i==3){
         i=0;
