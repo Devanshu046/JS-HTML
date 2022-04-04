@@ -2,6 +2,9 @@ let b1=document.getElementById('b1');
 let b2=document.getElementById('b2');
 let b3=document.getElementById('b3');
 let b4=document.getElementById('b4');
+let b5=document.getElementById('b5');
+let b6=document.getElementById('b6');
+let b7=document.getElementById('b7');
 
 //map mathod
 b1.addEventListener('click',()=>{
@@ -40,4 +43,32 @@ b4.addEventListener('click',()=>{
     const country=data.split(',');
     console.log(data);
     console.log(country);
+});
+
+//slice method
+b5.addEventListener('click',()=>{
+    const country=["india",'chain','japan','uk'];
+    console.log(country);
+    const c1=country.slice(1);
+    console.log(c1);
+    const c2=country.slice(1,3);
+    console.log(c2);
+    const c3=country.slice(-2);
+    console.log(c3);
+});
+
+//findindex method
+b6.addEventListener('click',()=>{
+    const n1=[1,20,45,85,95];
+    const max=(element)=>element==20;
+   // const max=(element)=>element>40;
+    console.log(n1.findIndex(max));
+});
+
+//for each method
+b7.addEventListener('click',()=>{
+    const no1=[11,22,33,44,55,66];
+    no1.forEach((data)=>{
+        console.log(data);
+    })
 });

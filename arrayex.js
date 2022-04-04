@@ -23,7 +23,7 @@ b1.addEventListener('click',()=>{
 b3.addEventListener('click',()=>{
      const a=[1,2,3,4,5];
      console.log(a);
-     let n=a.indexOf(7);
+     let n=a.indexOf(4);
      console.log(n);
 });
 b4.addEventListener('click',()=>{
