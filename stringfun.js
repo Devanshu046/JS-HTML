@@ -2,10 +2,16 @@ let b1=document.getElementById('b1');
 let b2=document.getElementById('b2');
 let b3=document.getElementById('b3');
 let b4=document.getElementById('b4');
+let b5=document.getElementById('b5');
+let b6=document.getElementById('b6');
+let b7=document.getElementById('b7');
 b1.addEventListener('click',sfun);
 b2.addEventListener('click',addchar);
 b3.addEventListener('click',trim1);
 b4.addEventListener('click',index);
+b5.addEventListener('click',substringdemo);
+b6.addEventListener('click',startswithdemo);
+b7.addEventListener('click',padstartdemo);
 
 function sfun(){
    let s1="we wiLL dO It";
@@ -45,4 +51,28 @@ function index(){
     let a=s.indexOf("l")
 
     console.log(a);
+}
+
+function substringdemo(){
+    const s="mozilla";
+
+    console.log(s.substring(1,3));
+
+    console.log(s.substring(2));
+}
+
+function startswithdemo(){
+    const s="saturday nights";
+
+    console.log(s.startsWith('sat'));
+
+    console.log(s.startsWith('abc'));
+}
+
+function padstartdemo(){
+    let s="525";
+
+    console.log(s.padStart(5,'0'));
+
+    console.log(s.padStart(5));
 }
