@@ -48,7 +48,7 @@ function trim1(){
 
 function index(){
     let s="hello";
-    let a=s.indexOf("l")
+    let a=s.indexOf("l");
 
     console.log(a);
 }

@@ -16,6 +16,12 @@ function palindrome(){
       j++;
        
     }
+    
+    // for(i=len-1;i>=0;i--)
+    // {
+    //   s1
+       
+    // }
 
     for(i=0;i<=len-1;i++)
     {
@@ -23,13 +29,16 @@ function palindrome(){
         {
             a++;
         }
+        else
+        {
+            console.log("not a palindrome");
+            break;
+        }
     }
     if(a==len)
     {
         console.log("palindrome");
     }
-    else{
-        console.log("not a palindrome");
-    }
+    
    
 }
