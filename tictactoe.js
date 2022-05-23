@@ -20,33 +20,52 @@ b7.addEventListener('click',demo1);
 b8.addEventListener('click',demo1);
 b9.addEventListener('click',demo1);
 
+let a=true;
 function demo1(){
 
-    //this.innerHTML="X";
+    
    
-    if(this.innerHTML=="")
+    if(a==true)
     {
         this.innerHTML=0;
     }
 
-    else if(this.innerHTML==0)
+    else 
     {
-        this.innerHTML="x";
+        this.innerHTML="X";
+    }
+    a=!a;
+    this.disabled=true;
+
+    if(((b1.innerHTML)==(b2.innerHTML))&&((b1.innerHTML)==(b3.innerHTML)) && (b1.disabled==true))
+    {
+        console.log("winner is:" + b1.innerHTML);
     }
 
-    else if((b1.innerHTML && b2.innerHTML && b3.innerHTML) || (b1.innerHTML && b4.innerHTML && b7.innerHTML) || (b3.innerHTML && b6.innerHTML && b9.innerHTML) || (b7.innerHTML && b8.innerHTML && b9.innerHTML) || (b1.innerHTML && b5.innerHTML && b9.innerHTML)== "X")
-{
-    console.log("winner X")
-}
-else if((b1.innerHTML && b2.innerHTML && b3.innerHTML) || (b1.innerHTML && b4.innerHTML && b7.innerHTML) || (b3.innerHTML && b6.innerHTML && b9.innerHTML) || (b7.innerHTML && b8.innerHTML && b9.innerHTML) || (b1.innerHTML && b5.innerHTML && b9.innerHTML)==0)
-{
-    console.log("winner 0");
-}
-else if((b1.innerHTML && b2.innerHTML && b3.innerHTML) || (b1.innerHTML && b4.innerHTML && b7.innerHTML) || (b3.innerHTML && b6.innerHTML && b9.innerHTML) || (b7.innerHTML && b8.innerHTML && b9.innerHTML) || (b1.innerHTML && b5.innerHTML && b9.innerHTML)!=(0 || "X"))
-{
-    console.log("draw");
-}
+    else if(((b1.innerHTML)==(b4.innerHTML))&&((b1.innerHTML)==(b7.innerHTML)) && (b1.disabled==true))
+    {
+        console.log("winner is:" + b1.innerHTML);
+    }
 
-    
+    else if(((b1.innerHTML)==(b5.innerHTML))&&((b1.innerHTML)==(b9.innerHTML)) && (b1.disabled==true))
+    {
+        console.log("winner is:" + b1.innerHTML);
+    }
+    else if (((b9.innerHTML)==(b7.innerHTML))&&((b9.innerHTML)==(b3.innerHTML)) && (b9.disabled==true))
+    {
+        console.log("winner is:" + b9.innerHTML);
+    }
+    else if(((b7.innerHTML)==(b8.innerHTML))&&((b7.innerHTML)==(b9.innerHTML)) && (b7.disabled==true))
+    {
+        console.log("winner is:" + b7.innerHTML);
+    }
+    else if(((b3.innerHTML)==(b5.innerHTML))&&((b3.innerHTML)==(b7.innerHTML)) && (b3.disabled==true))
+    {
+        console.log("winner is:" + b3.innerHTML);
+    }
+    else if(((b2.innerHTML)==(b5.innerHTML))&&((b2.innerHTML)==(b8.innerHTML)) && (b2.disabled==true))
+    {
+        console.log("winner is:" + b2.innerHTML);
+    }
    
 }
